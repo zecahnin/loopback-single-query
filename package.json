@@ -1,0 +1,29 @@
+{
+  "name": "loopback-single-sql-query",
+  "version": "1.0.0",
+  "description": "Creates a single SQL query from the loopback filters.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herbertscruz/loopback-single-sql-query.git"
+  },
+  "keywords": [
+    "single",
+    "query",
+    "loopback",
+    "filter"
+  ],
+  "author": "Herberts Cruz <herbertscruz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/herbertscruz/loopback-single-sql-query/issues"
+  },
+  "homepage": "https://github.com/herbertscruz/loopback-single-sql-query#readme",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "lodash": "^4.17.11"
+  }
+}
