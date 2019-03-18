@@ -24,6 +24,7 @@
   "homepage": "https://github.com/herbertscruz/loopback-single-sql-query#readme",
   "dependencies": {
     "debug": "^4.1.1",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "loopback-datasource-juggler": "^4.6.0"
   }
 }

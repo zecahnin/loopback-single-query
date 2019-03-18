@@ -5,4 +5,4 @@
 // License text available at https://opensource.org/licenses/MIT
 'use strict';
 
-exports.SingleSQLQuery = require('./lib/single-sql-query.js');
+module.exports = require('./lib/single-sql-query.js');
