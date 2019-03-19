@@ -1,9 +1,7 @@
 # loopback-single-query
-Creates a single SQL query from the loopback filters.
-
 The **[loopback-connector-juggler](https://github.com/strongloop/loopback-datasource-juggler)** is a fantastic ORM/ODM that perfectly meets all database query needs. However, when we work with relational databases and include many relationships in the root filter object or its scope, we notice a very large loss of performance.
 
-The **loopback-single-query** proposes to construct a single query to solve these cases. By optimizing tables and relationships in your database, performance gains can reach more than 60%.
+The **loopback-single-query** creates a single SQL query from the [Loopback Filters](https://loopback.io/doc/en/lb2/Querying-data.html) to solve these cases. By optimizing tables and relationships in your database, performance gains can achieve impressive results.
 
 ## Supported
 
@@ -65,12 +63,14 @@ const filter = {
 const app = require('server/server');
 const SingleQuery = require('loopback-single-query');
 
+// Promise
 const ps = SingleQuery.find(app.models.Model, filter);
 ps.then(console.log);
 ps.catch(console.error);
 
 // OR
 
+// Callback
 SingleQuery.find(app.models.Model, filter, (err, data) => {
   if (err) return console.error(err);
   console.log(data);
