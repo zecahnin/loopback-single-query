@@ -1,2 +1,2 @@
-# loopback-single-sql-query
+# loopback-single-query
 Creates a single SQL query from the loopback filters.
