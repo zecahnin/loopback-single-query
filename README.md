@@ -76,3 +76,19 @@ SingleQuery.find(app.models.Model, filter, (err, data) => {
   console.log(data);
 });
 ```
+
+## Debug
+
+You can analyze everything the **loopback-single-query** is doing in the background as with [debug](https://github.com/visionmedia/debug) as follows:
+
+```
+DEBUG=single-query* node .
+```
+
+Debug strings reference
+
+| Module / Source file | String |
+| ------- | --------------- |
+| lib/single-query.js | single-query |
+| lib/query-builder.js | single-query:query-builder |
+| lib/parse-to-model.js | single-query:parse-to-model |
