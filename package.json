@@ -1,6 +1,6 @@
 {
   "name": "loopback-single-query",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Creates a single SQL query from the loopback filters.",
   "main": "index.js",
   "scripts": {
